@@ -4,7 +4,7 @@ import br.com.estacio.polimorfismo2.spec.Veiculo;
 
 public class Carro implements Veiculo {
 
-    private Motor motor;
+    private final Motor motor;
 
     public Carro() {
         this.motor = new MotorCarro();
@@ -20,7 +20,7 @@ public class Carro implements Veiculo {
         System.out.println("Carro acelerando.");
     }
 
-    private class MotorCarro implements Motor {
+    private static class MotorCarro implements Motor {
 
         @Override
         public void ligar() {
