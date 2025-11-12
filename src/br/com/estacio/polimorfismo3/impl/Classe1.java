@@ -1,4 +1,11 @@
 package br.com.estacio.polimorfismo3.impl;
 
-public class Classe1 {
+import br.com.estacio.polimorfismo3.spec.IContrato1;
+
+public class Classe1 implements IContrato1.IIntracontrato1 {
+
+    @Override
+    public void intraMetodo1() {
+        System.out.println("intraMetodo1");
+    }
 }
