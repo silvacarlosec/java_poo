@@ -1,0 +1,5 @@
+Relançando uma exceção
+
+Para os cenários de exceção capturada, cujo tratamento não pode ser realizado ou foi realizado parcialmente no manipulador, existe a possibilidade de relançamento da exceção.
+
+O relançamento pode ser feito da mesma forma que um lançamento comum, com a instrução `throw` . Recomenda-se passar o objeto da exceção anterior como argumento, de forma a se preservar o contexto de origem da condição anormal do programa.
